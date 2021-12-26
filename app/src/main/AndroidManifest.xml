@@ -24,7 +24,7 @@
         android:theme="@style/OneUITheme">
         <activity 
 	    android:name=".activities.splash.SplashActivity"
-	    android:exported="false"
+	    android:exported="true"
 	    android:theme="@style/OneUITheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
