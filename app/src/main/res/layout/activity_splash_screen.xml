@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<de.dlyt.yanndroid.oneui.layout.SplashView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
-    android:background="?attr/colorBackground"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <de.dlyt.yanndroid.oneui.layout.SplashView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:animated="false"
-        app:text="@string/app_name"
-        app:foreground_image="@drawable/app_logo" />
-
-</RelativeLayout>
+    android:layout_height="match_parent"
+    app:animated="false"
+    app:text="@string/app_name"
+    app:foreground_image="@drawable/app_logo" />
