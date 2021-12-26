@@ -1,0 +1,28 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - master
+      - android-10
+  pull_request:
+    branches:
+      - master
+      - android-10
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Clone repository
+      uses: actions/checkout@v2
+    - name: Build
+      run: |
+        ./gradlew assembleDebug --stacktrace
+    - name: Store generated universal APK file
+      uses: actions/upload-artifact@v2
+      with:
+        name: Privacydashboard-OneUI
+        path: |
+            ./app/build/outputs/apk/debug/*.apk
+            ./app/build/outputs/apk/debug/output-metadata.json
