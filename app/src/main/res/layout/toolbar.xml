@@ -5,5 +5,5 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="?attr/colorBackground"
-    app:toolbar_expandable="true"
+    app:expandable="true"
     app:title="@string/app_name"/>
