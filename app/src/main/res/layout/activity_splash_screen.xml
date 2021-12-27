@@ -6,4 +6,4 @@
     android:layout_height="match_parent"
     app:animated="false"
     app:text="@string/app_name"
-    app:foreground_image="@drawable/app_logo" />
+    app:image="@drawable/app_logo" />
