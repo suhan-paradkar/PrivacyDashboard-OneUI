@@ -13,7 +13,7 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
+import de.dlyt.yanndroid.oneui.layout.ToolbarLayout;
 import androidx.core.content.ContextCompat;
 import androidx.core.content.res.ResourcesCompat;
 
@@ -70,14 +70,12 @@ public class MainActivity extends AppCompatActivity {
         initValues();
 
         Permissions.checkAutoStartRequirement(context, getLayoutInflater(), preferenceManager);
-        
 
     }
 
     private void setupToolbar(){
         Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        toolbar.setTitle(getString(R.string.app_name));
+        setSupportActionBar(toolbar.getToolbar());
 
         binding.scrollView.setOnScrollChangeListener((View.OnScrollChangeListener) (v, scrollX, scrollY, oldScrollX, oldScrollY) -> {
             if (binding.scrollView.canScrollVertically(Constants.SCROLL_DIRECTION_UP)){
