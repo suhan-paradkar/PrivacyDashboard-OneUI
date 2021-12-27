@@ -16,12 +16,28 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    signingConfigs {
+        debug {
+            storeFile file('dev_keystore.jks')
+            keyAlias 'alias'
+            storePassword 'xrj45yWGLbsO7W0v'
+            keyPassword 'xrj45yWGLbsO7W0v'
+        }
+    }
+
     buildTypes {
         release {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt')
         }
+
+	debug {
+            signingConfig signingConfigs.debug
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt')
+        }
     }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
