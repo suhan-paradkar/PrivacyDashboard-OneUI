@@ -7,7 +7,7 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "rk.android.app.privacydashboard"
+        applicationId "in.android.app.privacydashboard"
         minSdkVersion 24
         targetSdkVersion 31
         versionCode 14
