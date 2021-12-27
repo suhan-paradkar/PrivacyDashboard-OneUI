@@ -74,14 +74,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setupToolbar(){
-        Toolbar toolbar = findViewById(R.id.toolbar);
+        ToolbarLayout toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar.getToolbar());
 
         binding.scrollView.setOnScrollChangeListener((View.OnScrollChangeListener) (v, scrollX, scrollY, oldScrollX, oldScrollY) -> {
             if (binding.scrollView.canScrollVertically(Constants.SCROLL_DIRECTION_UP)){
-                toolbar.setElevation(Constants.TOOLBAR_SCROLL_ELEVATION);
+                toolbar.getToolbar().setElevation(Constants.TOOLBAR_SCROLL_ELEVATION);
             }else{
-                toolbar.setElevation(Constants.TOOLBAR_DEFAULT_ELEVATION);
+                toolbar.getToolbar().setElevation(Constants.TOOLBAR_DEFAULT_ELEVATION);
             }
         });
     }
