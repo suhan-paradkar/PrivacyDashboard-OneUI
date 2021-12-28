@@ -70,7 +70,7 @@ public class ExcludedActivity extends AppCompatActivity {
     }
 
     private void initValues(){
-        binding.recyclerView.setLayoutManager(new LinearLayoutManager(context));
+        binding.recyclerView.setLayoutManager(new SeslLinearLayoutManager(context));
         adapter = new AppAdapter(context, repository, logsRepository);
         binding.recyclerView.setAdapter(adapter);
         adapter.setListener((b, position) -> {
