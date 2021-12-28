@@ -12,7 +12,8 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.lifecycle.ViewModelProvider;
-import androidx.recyclerview.widget.LinearLayoutManager;
+import de.dlyt.yanndroid.oneui.sesl.recyclerview.SeslLinearLayoutManager;
+import de.dlyt.yanndroid.oneui.sesl.recyclerview.SeslAdapterHelper;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -93,7 +94,7 @@ public class AppInfoActivity extends AppCompatActivity {
             }
         }
 
-        binding.recyclerView.setLayoutManager(new LinearLayoutManager(context));
+        binding.recyclerView.setLayoutManager(new SeslLinearLayoutManager(context));
         adapter = new AppInfoAdapter(context, packageName);
         binding.recyclerView.setAdapter(adapter);
 

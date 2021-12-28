@@ -13,7 +13,8 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.lifecycle.ViewModelProvider;
-import androidx.recyclerview.widget.LinearLayoutManager;
+import de.dlyt.yanndroid.oneui.sesl.recyclerview.SeslAdapterHelper;
+import de.dlyt.yanndroid.oneui.sesl.recyclerview.SeslLinearLayoutManager;
 
 import rk.android.app.privacydashboard.R;
 import rk.android.app.privacydashboard.activities.log.adapter.LogsAdapter;
@@ -90,7 +91,7 @@ public class LogsActivity extends AppCompatActivity {
 
         permission_name = Permissions.getName(context,permission);
         logsViewModel = new ViewModelProvider(this).get(LogsViewModel.class);
-        binding.recyclerView.setLayoutManager(new LinearLayoutManager(context));
+        binding.recyclerView.setLayoutManager(new SeslLinearLayoutManager(context));
         adapter = new LogsAdapter(context, permission, getLayoutInflater());
         binding.recyclerView.setAdapter(adapter);
 
