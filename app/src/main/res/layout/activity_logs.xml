@@ -82,7 +82,6 @@
         android:layout_gravity="center_horizontal|bottom"
         app:iconTint="?attr/colorBackground"
         app:hideOnScroll="true"
-        android:textColor="?attr/colorBackground"
-        app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior"/>
+        android:textColor="?attr/colorBackground"/>
 
 </de.dlyt.yanndroid.oneui.layout.CoordinatorLayout>
