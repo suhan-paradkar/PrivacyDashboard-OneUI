@@ -9,7 +9,7 @@
 
     <include
         android:id="@+id/toolbar"
-        layout="@layout/toolbar"/>
+        layout="@layout/toolbar">
 
     <RelativeLayout
         android:id="@+id/rl_widget"
@@ -151,5 +151,5 @@
         </LinearLayout>
 
     </de.dlyt.yanndroid.oneui.view.NestedScrollView>
-
+    </include>
 </LinearLayout>

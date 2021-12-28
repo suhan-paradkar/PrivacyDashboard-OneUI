@@ -16,7 +16,7 @@
 
         <include
             android:id="@+id/toolbar"
-            layout="@layout/toolbar"/>
+            layout="@layout/toolbar">
 
         <de.dlyt.yanndroid.oneui.view.RecyclerView
             android:id="@+id/recyclerView"
@@ -64,7 +64,7 @@
                 android:textSize="16sp"/>
 
         </RelativeLayout>
-
+    </include>
     </LinearLayout>
 
     <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton

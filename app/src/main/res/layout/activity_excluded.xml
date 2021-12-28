@@ -16,7 +16,7 @@
 
         <include
             android:id="@+id/toolbar"
-            layout="@layout/toolbar"/>
+            layout="@layout/toolbar">
 
         <de.dlyt.yanndroid.oneui.layout.SwipeRefreshLayout
             android:id="@+id/swipeToRefresh"
@@ -64,6 +64,8 @@
                 android:textSize="16sp"/>
 
         </RelativeLayout>
+
+    </include>
 
     </LinearLayout>
 
