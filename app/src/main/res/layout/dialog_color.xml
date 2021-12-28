@@ -22,7 +22,7 @@
             android:layout_marginLeft="20dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
 
-        <androidx.recyclerview.widget.RecyclerView
+        <de.dlyt.yanndroid.oneui.view.RecyclerView
             android:layout_below="@id/alertTitle"
             android:id="@+id/recyclerView"
             android:overScrollMode="never"

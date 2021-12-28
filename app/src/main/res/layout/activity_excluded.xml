@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout
+<de.dlyt.yanndroid.oneui.layout.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -18,19 +18,19 @@
             android:id="@+id/toolbar"
             layout="@layout/toolbar"/>
 
-        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        <de.dlyt.yanndroid.oneui.layout.SwipeRefreshLayout
             android:id="@+id/swipeToRefresh"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-        <androidx.recyclerview.widget.RecyclerView
+        <de.dlyt.yanndroid.oneui.view.RecyclerView
             android:id="@+id/recyclerView"
             android:overScrollMode="never"
             android:clipToPadding="false"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
-        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        </de.dlyt.yanndroid.oneui.layout.SwipeRefreshLayout>
 
         <RelativeLayout
             android:id="@+id/rl_empty"
@@ -67,4 +67,4 @@
 
     </LinearLayout>
 
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</de.dlyt.yanndroid.oneui.layout.CoordinatorLayout>
