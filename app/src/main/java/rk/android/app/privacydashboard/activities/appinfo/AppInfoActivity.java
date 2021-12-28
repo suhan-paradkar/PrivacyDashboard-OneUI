@@ -96,7 +96,7 @@ public class AppInfoActivity extends AppCompatActivity {
 
         binding.recyclerView.setLayoutManager(new SeslLinearLayoutManager(context));
         adapter = new AppInfoAdapter(context, packageName);
-        binding.recyclerView.setAdapter((RecyclerView.Adapter)adapter);
+        binding.recyclerView.setAdapter(adapter);
 
         appInfoViewModel = new ViewModelProvider(this).get(AppInfoViewModel.class);
         appInfoViewModel.getAllLogsForPackage(packageName).observe(this, logs -> {
