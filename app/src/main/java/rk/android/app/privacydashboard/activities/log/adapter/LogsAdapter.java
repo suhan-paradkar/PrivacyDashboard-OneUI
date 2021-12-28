@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
-import androidx.recyclerview.widget.RecyclerView;
+import de.dlyt.yanndroid.oneui.view.RecyclerView;
 
 import java.util.ArrayList;
 import java.util.HashMap;

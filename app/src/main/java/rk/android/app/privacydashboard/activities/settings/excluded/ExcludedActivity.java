@@ -8,7 +8,7 @@ import android.view.View;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import androidx.recyclerview.widget.LinearLayoutManager;
+import de.dlyt.yanndroid.oneui.sesl.recyclerview.SeslLinearLayoutManager;
 
 import java.util.List;
 
